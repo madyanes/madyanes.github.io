@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+.container {
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+html {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: content-box;
+  margin: 0;
+}
+
+body > header {
+  background-color: #FFD93D;
+}
+
+body > header > p {
+  font-style: italic;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+  .container {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  body > header {
+    font-size: 0.60rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media screen and (min-width: 600px) {} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media screen and (min-width: 768px) {} */
+
+/* Color palette: https://colorhunt.co/palette/f6f1e9ffd93dff84004f200d */
