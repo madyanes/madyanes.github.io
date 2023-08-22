@@ -4,9 +4,14 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+// This object created by Madyan
+const myConfig = {
+  siteTitle: `MadDEV`,
+}
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: myConfig.siteTitle,
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -66,9 +71,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: myConfig.siteTitle,
         logo: {
-          alt: 'My Site Logo',
+          alt: myConfig.siteTitle + ' Logo',
           src: 'img/logo.svg',
         },
         items: [
