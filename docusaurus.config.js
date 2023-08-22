@@ -12,7 +12,7 @@ const myConfig = {
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: myConfig.siteTitle,
-  tagline: 'Dinosaurs are cool',
+  tagline: 'I am Madyan, a web developer.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
