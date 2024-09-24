@@ -1,4 +1,4 @@
-import eslintPluginAstro from 'eslint-plugin-astro'
+import eslintPluginAstro from "eslint-plugin-astro";
 
 // Docs can be seen here: https://ota-meshi.github.io/eslint-plugin-astro/user-guide/
 
@@ -11,7 +11,7 @@ export default [
       // override/add rules settings here, such as:
       // "astro/no-set-html-directive": "error"
 
-      'astro/no-unused-css-selector': 'warn',
+      "astro/no-unused-css-selector": "warn",
     },
   },
-]
+];
