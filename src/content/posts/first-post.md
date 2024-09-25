@@ -1,0 +1,7 @@
+---
+title: Blog menyenangkan, bukan?!
+tags: ["jurnal"]
+publishDate: 2024-09-25
+---
+
+Bukan.
