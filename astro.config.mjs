@@ -7,4 +7,9 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: "https://madyanes.github.io",
   integrations: [tailwind()],
+  markdown: {
+    shikiConfig: {
+      theme: "github-light",
+    },
+  },
 });
