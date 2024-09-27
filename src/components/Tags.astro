@@ -4,7 +4,7 @@ import Tag from "./Tag.astro";
 const { tags } = Astro.props;
 ---
 
-<div class="flex items-center gap-1 rounded text-xs">
-  <div>Label:</div>
+<div class="items-center space-x-2 rounded text-xs">
+  <!-- <div>Label:</div> -->
   {tags.map((tag: string, index: number) => <Tag tag={tag} />)}
 </div>

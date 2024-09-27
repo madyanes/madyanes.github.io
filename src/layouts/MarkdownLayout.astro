@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 import Tags from "../components/Tags.astro";
+import PublishDate from "../components/PublishDate.astro";
+import PostMetadata from "../components/PostMetadata.astro";
 
 const { frontmatter } = Astro.props;
 ---
@@ -8,7 +10,10 @@ const { frontmatter } = Astro.props;
 <BaseLayout title={frontmatter.title}>
   <article class="prose">
     <h1>{frontmatter.title}</h1>
-    <Tags tags={frontmatter.tags} />
+    <PostMetadata
+      publishDate={frontmatter.publishDate}
+      tags={frontmatter.tags}
+    />
     <slot />
   </article>
 </BaseLayout>
