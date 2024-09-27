@@ -8,11 +8,14 @@ const title = "Jurnal";
 ---
 
 <BaseLayout title={title}>
-  <ul class="text-violet-600">
-    {
-      allPosts.map((post) => (
-        <BlogPost url={`/blog/${post.slug}`} title={post.data.title} />
-      ))
-    }
-  </ul>
+  <div class="prose max-w-none md:prose-lg lg:prose-xl">
+    <h1>{title}</h1>
+    <ul>
+      {
+        allPosts.map((post) => (
+          <BlogPost url={`/blog/${post.slug}`} data={post.data} />
+        ))
+      }
+    </ul>
+  </div>
 </BaseLayout>

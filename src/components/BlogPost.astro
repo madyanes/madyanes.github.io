@@ -1,7 +1,13 @@
 ---
-const { title, url } = Astro.props;
+import { formatDate } from "../utils/formatDate";
+
+const { data, url } = Astro.props;
+const formattedDate = formatDate(data.publishDate);
 ---
 
-<li>
-  <a href={url}>{title}</a>
+<li
+  class="flex w-fit flex-col-reverse border-l-2 border-slate-700 hover:ml-6 hover:border-slate-200"
+>
+  <a href={url} class="no-underline">{data.title}</a>
+  <span class="text-xs">{formattedDate}</span>
 </li>
