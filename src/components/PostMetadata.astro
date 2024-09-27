@@ -1,0 +1,11 @@
+---
+import PublishDate from "./PublishDate.astro";
+import Tags from "./Tags.astro";
+
+const { publishDate, tags } = Astro.props;
+---
+
+<div class="space-y-2 bg-slate-100 p-4">
+  <PublishDate publishDate={publishDate} />
+  <Tags tags={tags} />
+</div>
