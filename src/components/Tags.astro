@@ -6,5 +6,5 @@ const { tags } = Astro.props;
 
 <div class="items-center space-x-2 rounded text-xs">
   <!-- <div>Label:</div> -->
-  {tags.map((tag: string, index: number) => <Tag tag={tag} />)}
+  {tags.map((tag: string) => <Tag tag={tag} />)}
 </div>
