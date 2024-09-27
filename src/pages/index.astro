@@ -1,7 +1,18 @@
 ---
+import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import BlogPost from "../components/BlogPost.astro";
+
+const allPosts = await getCollection("posts");
+const title = "Jurnal";
 ---
 
-<BaseLayout title="Home Page">
-  <h1>Astro</h1>
+<BaseLayout title={title}>
+  <ul class="text-violet-600">
+    {
+      allPosts.map((post) => (
+        <BlogPost url={`/blog/${post.slug}`} title={post.data.title} />
+      ))
+    }
+  </ul>
 </BaseLayout>
