@@ -1,0 +1,130 @@
+---
+title: Komponen Majemuk di React
+tags: ["react", "component", "compound component"]
+publishDate: 2024-09-28
+---
+
+Pernah melihat struktur komponen seperti ini?
+
+```jsx
+<Component>
+  <Component.X />
+  <Component.Y>
+    <button>Z</button>
+  </Component.Y>
+</Component>
+```
+
+Komponen di atas disebut **_compound component_** atau komponen majemuk.
+
+Sebenarnya tidak ada yang aneh dengan kode di atas. Ayo kita uraikan!
+
+## Properti Fungsi
+
+Di dalam JavaScript, sebuah fungsi bisa memiliki properti karena sejatinya **fungsi merupakan sebuah objek**.
+
+```js
+function fn() {}
+fn.a = "Info loker, bang! 🥺";
+fn.b = function () {};
+```
+
+Lalu apa hubungannya dengan komponen React?
+
+Jangan lupa bahwa komponen juga merupakan fungsi, sehingga bukan hal mustahil jika fungsi tersebut bisa disisipkan properti.
+
+```jsx
+function MyComponent({children}) {return children}
+MyComponent.InnerComponent = function () {return null};
+
+
+function Component() {
+  return (
+    <MyComponent>
+      <MyComponent.InnerComponent />
+    </Component>
+  )
+}
+```
+
+Agar tidak menggantung, sekarang mari kita buatkan contoh implementasinya.
+
+## Penggunaan Komponen Majemuk
+
+Komponen majemuk memang jarang digunakan, karena pendekatan ini hanya berlaku untuk kasus tertentu. Contoh yang paling sering saya temukan adalah untuk membuat modal.
+
+### Membuat Komponen Modal
+
+Semoga apa yang saya sampaikan di atas cukup jelas. Sekarang ayo membuat komponen Modal yang menggunakan pendekatan komponen majemuk agar lebih jelas lagi.
+
+1. Buat komponen `Modal` yang mengembalikan elemen atau komponen _children_.
+
+   ```jsx
+   function Modal({ children }) {
+     return <div>{children}</div>;
+   }
+   ```
+
+2. Buat komponen `Trigger` sebagai properti dari komponen `Modal`, berperan sebagai pemicu untuk membuka modal.
+
+   Sekarang kita sadar kalau kita membutuhkan _state_ untuk menyimpan informasi apakah modal sedang aktif atau tidak.
+
+   Tetapi masalahnya adalah komponen `Trigger` tidak bisa mengakses _state_ di dalam komponen `Modal`.
+
+   Kenapa?
+
+   Karena sebetulnya komponen majemuk tidaklah saling berkaitan, jadi komponen `Trigger` bukanlah _children_ dari komponen `Modal`.
+
+   Di sinilah peran **Context API** dibutuhkan untuk memberi akses ke _state_ yang sama di dalam komponen berbeda.
+
+   ```jsx
+   const ModalContext = createContext();
+
+   function Modal({ children }) {
+     const [isOpen, setIsOpen] = useState(false);
+     const openModal = () => setIsOpen(true);
+     const closeModal = () => setIsOpen(false);
+     return (
+       <ModalContext.Provider value={{ isOpen, openModal, closeModal }}>
+         <div>{children}</div>
+       </ModalContext.Provider>
+     );
+   }
+
+   Modal.Trigger = function ({ children }) {
+     const { openModal } = useContext(ModalContext);
+     return <button onClick={openModal}>{children}</button>;
+   };
+   ```
+
+3. Buat juga komponen `Content` sebagai properti dari komponen `Modal` yang perannya sebagai konten di dalam modal.
+
+   ```jsx
+   Modal.Content = function ({ children }) {
+     const { isOpen, closeModal } = useContext(ModalContext);
+     if (!isOpen) return null;
+     return (
+       <>
+         {children}
+         <button onClick={closeModal}>Close</button>
+       </>
+     );
+   };
+   ```
+
+4. Lalu beginilah penggunaan komponen `Modal` yang kita buat.
+
+   ```jsx
+   function App() {
+     return (
+       <Modal>
+         <Modal.Trigger>Buka Modal</Modal.Trigger>
+         <Modal.Content>
+           <p>Ini adalah konten modal.</p>
+         </Modal.Content>
+       </Modal>
+     );
+   }
+   ```
+
+Semoga memberi setidaknya sedikit gambaran. Silakan [kunjungi situs ini (CodeSandbox)](https://codesandbox.io/p/sandbox/8pgm7l) untuk melihat kode lengkapnya.
