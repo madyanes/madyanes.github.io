@@ -1,0 +1,41 @@
+---
+title: Kesalahan Kecil Tapi Fatal
+tags: ["wisdom"]
+publishDate: 2024-09-29
+---
+
+Tak pernah saya menyangka kalau malam ini akan mengalami peristiwa yang cukup rumit jika dilihat dari akibatnya.
+
+Saat itu saya tiba di SPBU setelah mengantar adik ke kolam renang Tirtayasa. Waktu tepatnya saya tidak tahu pasti, mungkin kurang lebih jam 19.15.
+
+Antrian Pertalite terbagi dua, kiri untuk roda dua dan roda empat, kanan untuk roda dua. Saya ambil jalur kiri.
+
+Beberapa menit kemudian, jalur kanan diarahkan petugas ke pos sebelah kanannya lagi karena Pertalite di pos di mana saya mengantri sudah menipis. Untuk jalur kiri dibiarkan untuk tetap mengantri bersama dua kendaraan besar.
+
+Setelah beberapa menit berlalu, terlihat antrian di jalur saya bertambah. Melihat itu, petugas menghampiri saya atau lebih tepatnya mengarahkan antrian di belakang saya untuk berpindah ke jalur kanan. Lalu petugas pergi entah ke mana, yang jelas tidak ke pos. Pokoknya mata saya tidak melihat keberadaan beliau di semua pos.
+
+Beberapa menit kemudian beliau kembali lagi ke antrian saya, mengarahkan orang-orang di belakang saya, tampaknya mereka juga belum lama datang.
+
+Di sinilah awal mula kejadian kecil yang saya maksudkan.
+
+Petugas tadi minta tolong ke saya agar kalau ada orang baru yang mengantri di belakang supaya diarahkan ke jalur kanan. Tanpa pikir panjang saya setujui saja, bukan tugas berat pikir saya.
+
+Saya lihat ada orang datang di belakang langsung saya arahkan agar mengantri ke kanan, walaupun raut wajah orang di belakang saya ini seperti mengisyaratkan ketidak-terimaan, tapi pada akhirnya mengerti dan dengan suka rela berpindah antrian.
+
+Beberapa saat kemudian ada yang datang lagi, langsung saya arahkan lagi. Tapi lama-lama kok jadi repot begini pikir saya. Karena harus memberi pengertian ke orang-orang yang baru datang. Akhirnya saya putuskan untuk cuek, karena bukan kewajiban saya.
+
+Tidak lama antrian di belakang sudah cukup panjang. Entah dari mana tiba-tiba petugas menghampiri saya, lalu menegur saya yang intinya:
+
+Petugas: "Mas, kok yang antri tidak dikasih tahu kalau di sini (hampir) habis?"
+
+Saya: "Sudah saya kasih tahu mas yang sebelum-sebelumnya. Ini antrian baru. Capek mas."
+
+Petugas memberi tahu ke antrian belakang saya: "Bapak-bapak, ibu-ibu masnya tadi kan sudah memberi tahu kalau di sini habis, tolong pindah ke kanan ya?!"
+
+Mas-mas di belakang saya dengan sedikit emosi berkata: "Lah, dia ndak pernah ngomong begitu, pak!"
+
+Petugas berbicara ke saya: "Tuh, mas! Gimana, sih?"
+
+Saya berusaha menjelaskan tapi petugas sama orang-orang yang antri di belakang sekarang _nampaknya_ kesal kepada saya. Saya mau menjelaskan pun sepertinya percuma, sebab petugasnya bukan tipe orang yang kalem. Suaranya meninggi, entah karena situasi di sini sedang ramai atau karena kesal. Oke, lebih baik saya diam karena saya tidak mau menyia-nyiakan waktu dan energi saya untuk memperdebatkan ini.
+
+Terlihat ada satu orang yang keberatan berpindah pos, karena tidak mau harus mengantri lagi, dia bablas pergi dengan agak ngebut.
