@@ -13,14 +13,12 @@ const title = "Jurnal";
 ---
 
 <BaseLayout title={title}>
-  <div class="prose max-w-none md:prose-lg lg:prose-xl">
-    <h1>{title}</h1>
-    <ul>
-      {
-        sortedPosts.map((post) => (
-          <BlogPost url={`/blog/${post.slug}`} data={post.data} />
-        ))
-      }
-    </ul>
-  </div>
+  <h1>{title}</h1>
+  <ul>
+    {
+      sortedPosts.map((post) => (
+        <BlogPost url={`/blog/${post.slug}`} data={post.data} />
+      ))
+    }
+  </ul>
 </BaseLayout>
