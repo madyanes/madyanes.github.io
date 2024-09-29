@@ -6,7 +6,7 @@ const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout title={frontmatter.title}>
-  <article class="prose max-w-none md:prose-lg lg:prose-xl">
+  <article>
     <h1>{frontmatter.title}</h1>
     <PostMetadata
       publishDate={frontmatter.publishDate}
