@@ -5,7 +5,7 @@ import Tags from "./Tags.astro";
 const { publishDate, tags } = Astro.props;
 ---
 
-<div class="space-y-2 bg-slate-100 p-4">
+<div class="mb-10 space-y-2 bg-slate-200 p-4 font-light sm:w-fit">
   <PublishDate publishDate={publishDate} />
   <Tags tags={tags} />
 </div>
