@@ -7,11 +7,14 @@ const { frontmatter } = Astro.props;
 
 <BaseLayout title={frontmatter.title}>
   <article>
-    <h1>{frontmatter.title}</h1>
-    <PostMetadata
-      publishDate={frontmatter.publishDate}
-      tags={frontmatter.tags}
-    />
+    {
+      frontmatter.publishDate && (
+        <PostMetadata
+          publishDate={frontmatter.publishDate}
+          tags={frontmatter.tags}
+        />
+      )
+    }
     <slot />
   </article>
 </BaseLayout>
