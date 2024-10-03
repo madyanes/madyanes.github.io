@@ -1,0 +1,25 @@
+---
+title: Semua yang ada di JavaScript adalah objek? Bukan!
+tags: ["javascript"]
+publishDate: 2024-10-03
+---
+
+# {frontmatter.title}
+
+Saya bertanya kepada diri saya sendiri, apakah semua yang ada di JS adalah objek? Jika tidak, mengapa skrip di bawah valid?
+
+```js
+'abc'.toUppercase() // sintaks valid
+```
+
+Jika semua yang ada di JS merupakan objek, bagaimana dengan data tipe primitif?
+
+```js
+typeof 'abc' // string
+```
+
+Bukankah seharusnya data tipe `string` di dalam JS tidak bisa disisipkan properti karena yang hanya bisa disisipkan _property_ maupun _method_ hanyalah objek? Ya, benar.
+
+Pada kasus ini, sebenarnya JS melakukan konversi data bertipe (primitif) `string` menjadi objek sementara di balik layar. Proses ini dinamakan ___autoboxing___.
+
+> Autoboxing adalah proses di mana JavaScript secara otomatis mengubah tipe data primitif menjadi objek saat dibutuhkan. Proses ini memungkinkan kita untuk menggunakan metode dan properti yang biasanya hanya tersedia untuk objek pada tipe data primitif.
