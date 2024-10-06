@@ -11,10 +11,33 @@ const { frontmatter } = Astro.props;
   </article>
   {
     frontmatter.publishDate && (
+      <>
       <PostMetadata
         publishDate={frontmatter.publishDate}
         tags={frontmatter.tags}
       />
+
+    <hr />
+
+    <section class="comments">
+        {/* @ts-ignore */}
+        <script
+          src="https://utteranc.es/client.js"
+          repo="madyanes/madyanes.github.io"
+          issue-term="title"
+          label="comment"
+          theme="github-light"
+          crossorigin="anonymous"
+          async
+        />
+
+      <style>
+        .utterances {
+          max-width: 100%;
+        }
+      </style>
+    </section>
+    </>
     )
   }
 </BaseLayout>
